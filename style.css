@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F4F8D3;
+}
+header{
+    background-color: rgb(12, 48, 0);
+    height: 9vh;
+box-shadow: 0px 3px 10px rgba(26, 34, 56, 0.5);
+color: #C7D0E8;
+text-shadow: 1px 1px 3px rgba(26, 34, 56, 0.5);
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 800;
+font-size: 1.5em;
+padding-bottom: 2vh;
+display: flex;
+align-items: center;
+}
+#logo{
+    padding-left: 10%;
+}
+#progress{
+    text-align: right;
+    width: 86vw;
+    margin-top: 1vh;
+    margin-left: 7vw;
+}
+#progressBar{
+    width: 86vw;
+    height: 3vh;
+    border: 2px solid rgb(3, 41, 58) ;
+    margin-top: 0.5vh;
+    box-shadow: 0px 1px 10px rgba(17, 142, 159, 0.977);
+    overflow: hidden;
+}
+#progressColor{
+    background-color: rgb(26, 210, 38);
+    height: 100%;
+    width: 20%;
+    border-right: 1px solid black;
+}
+#progressMsg{
+    text-shadow: 2px 1px 3px rgba(26, 34, 56, 0.5);
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 560;
+font-size: 1.33em;
+margin-top: 2vh;
+
+}
+#addedList{
+
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin:0 10vw;
+    margin-top: 10vh;
+    height: auto;
+}
+.listItems{
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+ height: 9vh;
+ width: 100%;
+ margin-bottom: 8vh;
+ box-shadow: 2px 2px 8px rgba(27, 27, 27, 0.452);
+ display: flex;
+justify-content: space-evenly;
+ align-items: center;
+ background-color: rgba(7, 185, 43, 0.484);
+ border-radius: 3px;
+}
+.listItems:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.listName{
+    display: flex;
+align-items: center;
+    width: 70%;
+    margin-left: 2%;
+    height: 80%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 2.5vh;
+font-weight: 700;
+text-transform: capitalize;
+color: azure;
+    overflow-y: auto;
+    overflow-x: auto;
+    word-wrap: break-word; 
+    word-break: break-word; 
+}
+#List-a-List{
+    position: fixed;
+    bottom:2vh;
+    height: 6vh;
+    border-radius: 5px;
+    margin: 0 5vw;
+    width:90vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(26, 34, 56, 0.5);
+    background-color:  rgba(0, 34, 48, 0.587);
+
+
+}
+#TDlistName{
+    height: 60%;
+    width: 65%;
+    background-color:transparent;
+    border:1px solid rgba(26, 34, 56, 0.7);
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 5px;
+    color: aliceblue;
+
+
+}
+#TDlistName:focus::placeholder{
+    color: transparent;
+}
+#TDlistName::placeholder{
+  color: rgba(240, 248, 255, 0.559);
+}
+#addList{
+    height: 90%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0px 3%;
+    color: rgba(240, 248, 255, 0.559);
+
+}
+#addList:active{
+    background-color: #b4b8c2a1;
+}
+#List-a-List:hover{
+    box-shadow: 2px 2px 11px rgba(26, 34, 56, 0.8);
+}
+.greenColor{
+    color: greenyellow;
+    margin-right: 4%;
+    cursor: pointer;
+}
+.redColor{
+    color: #DC143C;
+    cursor: pointer;
+}
+.greenColor:active,.redColor:active{
+    opacity: 0.5;
+}
